@@ -12,13 +12,13 @@ public class MyForm extends com.codename1.ui.Form {
         initGuiBuilderComponents(resourceObjectInstance);
     }
 
-    public void onBtnSayHelloActionEvent(ActionEvent ev) {
+    private void onBtnSayHelloActionEvent(ActionEvent ev) {
         Dialog.show("Attention!","Hello from the other side","OK",null);
     }
 
-    int count = 0;
+    private int count = 0;
 
-    public void onButtonActionEvent(ActionEvent ev) {
+    private void onButtonActionEvent(ActionEvent ev) {
         gui_Label.setText("You clicked the button: "+ ++count +" times");
     }
 

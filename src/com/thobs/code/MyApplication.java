@@ -3,7 +3,6 @@ package com.thobs.code;
 import com.codename1.ui.*;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
-
 import static com.codename1.ui.CN.getCurrentForm;
 
 public class MyApplication {
