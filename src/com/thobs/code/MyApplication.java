@@ -1,6 +1,5 @@
 package com.thobs.code;
 
-import com.codename1.io.Log;
 import com.codename1.ui.*;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
@@ -18,8 +17,6 @@ public class MyApplication {
         // Enable Toolbar on all Forms by default
         Toolbar.setGlobalToolbar(true);
 
-        // Pro only feature
-        Log.bindCrashProtection(true);
     }
     
     public void start() {
