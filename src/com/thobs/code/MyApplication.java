@@ -2,8 +2,6 @@ package com.thobs.code;
 
 import com.codename1.io.Log;
 import com.codename1.ui.*;
-import com.codename1.ui.layouts.BorderLayout;
-import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 
@@ -29,8 +27,9 @@ public class MyApplication {
             current.show();
             return;
         }
-        showLoginForm();
 
+        MyForm mf = new MyForm();
+        mf.show();
     }
 
     public void stop() {
@@ -42,29 +41,6 @@ public class MyApplication {
     }
     
     public void destroy() {
-    }
-
-    private void showLoginForm() {
-        Form loginForm = new Form();
-
-        // the blue theme styles the title area normally this is good but in this case we don't want the blue bar at the top
-        loginForm.getTitleArea().setUIID("Container");
-        loginForm.setLayout(new BorderLayout());
-        loginForm.setUIID("MainForm");
-        Container cnt = new Container(new BoxLayout(BoxLayout.Y_AXIS));
-        cnt.setUIID("Padding");
-        Button loginWithGoogle = new Button("Signin with Google");
-        Button loginWithFacebook = new Button("Signin with Facebook");
-        cnt.addComponent(loginWithGoogle);
-        cnt.addComponent(loginWithFacebook);
-        loginWithGoogle.addActionListener((e) -> {
-            //doLogin(GoogleConnect.getInstance());
-        });
-        loginWithFacebook.addActionListener((e) -> {
-            //doLogin(FacebookConnect.getInstance());
-        });
-        loginForm.addComponent(BorderLayout.SOUTH, cnt);
-        loginForm.show();
     }
 
 }
