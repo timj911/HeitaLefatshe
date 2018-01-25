@@ -20,6 +20,7 @@ public class MyForm extends com.codename1.ui.Form {
 
     private void onButtonActionEvent(ActionEvent ev) {
         gui_Label.setText("You clicked the button: "+ ++count +" times");
+        
     }
 
     //-- DON'T EDIT BELOW THIS LINE!!!
@@ -32,7 +33,6 @@ public class MyForm extends com.codename1.ui.Form {
 // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void guiBuilderBindComponentListeners() {
         EventCallbackClass callback = new EventCallbackClass();
-        gui_BtnCount.addActionListener(callback);
         gui_BtnSayHello.addActionListener(callback);
     }
 
@@ -52,9 +52,6 @@ public class MyForm extends com.codename1.ui.Form {
                 sourceComponent = sourceComponent.getParent().getLeadParent();
             }
 
-            if(sourceComponent == gui_BtnCount) {
-                onButtonActionEvent(ev);
-            }
             if(sourceComponent == gui_BtnSayHello) {
                 onBtnSayHelloActionEvent(ev);
             }
@@ -83,11 +80,10 @@ public class MyForm extends com.codename1.ui.Form {
                 gui_Label.setInlineStylesTheme(resourceObjectInstance);
         gui_Label.setName("Label");
         gui_BtnCount.setPreferredSizeStr("16.51143mm inherit");
-        gui_BtnCount.setText("Click Me");
+        gui_BtnCount.setText("Count");
                 gui_BtnCount.setInlineStylesTheme(resourceObjectInstance);
         gui_BtnCount.setName("BtnCount");
         gui_BtnSayHello.setText("Say Hello");
-        gui_BtnSayHello.setUIID("Button");
                 gui_BtnSayHello.setInlineStylesTheme(resourceObjectInstance);
         gui_BtnSayHello.setName("BtnSayHello");
         gui_Box_Layout_Y.setPreferredSizeStr("213.59018mm 59.48349mm");
@@ -97,6 +93,5 @@ public class MyForm extends com.codename1.ui.Form {
     }// </editor-fold>
 
 //-- DON'T EDIT ABOVE THIS LINE!!!
-
 
 }

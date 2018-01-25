@@ -5,9 +5,9 @@
     <layoutConstraint insets="1.6934805mm 0.0mm 64.276886% 1.4817953mm" referenceComponents="-1 -1 -1 -1" referencePositions="0.0 0.0 0.0 0.0" />
     <component type="Label" text="Hello World!" preferredSize="62.235394mm inherit" name="Label">
     </component>
-    <component type="Button" text="Click Me" preferredSize="16.51143mm inherit" name="BtnCount" actionEvent="true">
+    <component type="Button" text="Count" preferredSize="16.51143mm inherit" name="BtnCount">
     </component>
-    <component type="Button" uiid="Button" text="Say Hello" name="BtnSayHello" actionEvent="true">
+    <component type="Button" text="Say Hello" name="BtnSayHello" actionEvent="true">
     </component>
   </component>
 </component>
